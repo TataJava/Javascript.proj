@@ -3,19 +3,19 @@
 <head>
 <script>
     function greeting(){
-        document.getElementById("demo").innerHTML = "Hello Thanakom";
-        let name=prompt("Please input your name")
-        window.alert('Hello Thanakom')
+        let name=prompt("Please input your name");
+        window.alert('Hello'+name);
+        document.getElementById("demo").innerHTML = "Hello Thanakom"+name;
     }
     function changeTored(){
         document.getElementById('demo').style.color="red";
         document.getElementById('demo').style.fontSize="30px";
     }
     function changeToDog(){
-        document.getElementById('pic').style.src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.6435-9/95132237_103549848016210_8597914061415383040_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeEL8kvx7LhCY-d7uLPmozoA_UQhXg_hOyb9RCFeD-E7JmL0LeHNPWYkEM8Ibdqipmvs0M5HMIKVmMxCLtKGdw8h&_nc_ohc=IzI0w2O1lkAAX8QFF55&_nc_ht=scontent.fbkk12-3.fna&oh=00_AT-1Le3gHniOkmsw4zoiKRmwdWjNDuSVndFlz03JTCPIbw&oe=630FF546";
+        document.getElementById('pic').src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.6435-9/95132237_103549848016210_8597914061415383040_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeEL8kvx7LhCY-d7uLPmozoA_UQhXg_hOyb9RCFeD-E7JmL0LeHNPWYkEM8Ibdqipmvs0M5HMIKVmMxCLtKGdw8h&_nc_ohc=IzI0w2O1lkAAX8QFF55&_nc_ht=scontent.fbkk12-3.fna&oh=00_AT-1Le3gHniOkmsw4zoiKRmwdWjNDuSVndFlz03JTCPIbw&oe=630FF546";
     }
     function changeToCat(){
-        document.getElementById('pic').style.src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60";
+        document.getElementById('pic').src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60";
 
     }
 </script>
@@ -29,12 +29,12 @@
 <body>
 
 <h2>My First JavaScript</h2>
-<img id ="pic" crc="cat.jpg"><br>
+<img id ="pic" src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"><br>
 <button type="button" onclick="changeToDog()">dog</button>
 <button type="button" onclick="changeToCat()">cat</button>
 <button type="button" onclick="greeting().innerHTML = 'Hello TaTa';
 window.alert('Thanakom')">
-Click me to display Date and Time.</button>
+Click me to greetiong</button>
 <button type="button"
 onclick="changeTored().innerHTML = 'Hello TaTa';
 window.alert('Thanakom')">
